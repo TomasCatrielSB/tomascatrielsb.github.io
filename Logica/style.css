@@ -1,0 +1,34 @@
+body {
+    font-family: heletica, aria, sans-serif;
+    background-color: #e9f2f9;
+    text-align: center;
+    
+}
+h1 {
+    font-size: 90px;
+    color: #1b325f;
+    margin-top: 30px;
+    margin-bottom: 35px;
+
+}
+h2 {
+    font-size: 35px;
+    color: #1b325f;
+}
+p {
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    height: 30px;
+    color: #1b325f;
+    
+}
+
+img {
+    image-resolution: weight 200px; height: 110px;
+}

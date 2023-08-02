@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu edad en mundiales</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Tu edad en mundiales.</h1> 
+  <main>
+  <h2>Medir tu edad en años ya pasó de moda. <br>
+    Ahora lo que importa es cuantos mundiales viviste.</h2>
+  <p>¿Vos cuántas copas tenés?</p>
+  <input id="nacimiento" value="" type="text" placeholder="Año de nacimiento: ej 1974" required>
+  <button onclick="tocame()" type="submit">Calcular</button><br>
+  <p id="letrita">Tu edad en mundiales es: <span id="resultado"></span> </p>
+  <p id="categoria"></p>
+  <br>
+  <img class="img" src="images/copa-mundial.png" alt="Copa del mundo">
+
+  <script src="https://www.codearock.com/truchicode.js"></script>
+  <script>
+    let tocame = () => {
+    let resultado = dame("resultado")
+    let categoria = dame("categoria")
+    let nacimiento= numerin("nacimiento")
+    let edadEnMundiales = (2022-nacimiento)/4+1
+    let frase = edadEnMundiales
+    escribime(frase, resultado);
+    let resultadoCategoria = "Viviste algún mundial"
+    
+    if (edadEnMundiales >= 1) {
+      resultadoCategoria = "Viste a Messi levantar la copa!"
+    }
+    if (edadEnMundiales >= 10) {
+      resultadoCategoria = "No solo viste levantar la copa a Messi, sino también a Maradona!"
+    }
+    if (edadEnMundiales >= 12) {
+      resultadoCategoria = "Sos una leyenda, viste levantar la copa a Messi, Maradona y Kempes!"
+    }
+    escribime(resultadoCategoria, categoria)
+  }
+
+  </script>
+</main>
+  <br>
+<footer><small>El 18 de diciembre de 2022 el seleccionado argentino se consagra Campeón del Mundo por tercera vez.</small></footer>
+
+<!--Paleta de colores
+.color1 { #1b325f };
+.color2 { #9cc4e4 };
+.color3 { #e9f2f9 };
+.color4 { #3a89c9 };
+.color5 { #f26c4f };-->
+</body>
+</html>
