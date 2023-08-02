@@ -20,7 +20,7 @@ nav{
   justify-content: flex-end;
   height: 48px;
 }
-a {
+a{
   text-decoration: none;
   margin: 6px 7px 7px 7px
 }
@@ -52,13 +52,16 @@ nav a:hover{
 }
 section{
 display: flex;
+justify-content: flex-start;
 align-items: center;
-justify-content: center;
+*justify-content: center;
 flex-direction: column;
-margin-top:18vh;
+flex: 1;
+min-height: 100%;
+padding-top: 40px;
 }
 .logo{
-  height: 92px;
+  height: 180px;
 }
 .search{
   display: flex;

@@ -2,6 +2,11 @@ body{
   font-family: 'Roboto', sans-serif;
   color: black;
   background: rgb(236, 202, 230);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
 
   background: url(../images/background.avif);
 }
@@ -39,11 +44,14 @@ nav ul{
 }
 section{
   text-align: center;
+  display: flex;
+  flex-direction: column;
+
 }
 section p{
     padding-left: 30px;
     padding-right: 30px;
-    margin-top: 0px;
+    margin-top: 20px;
 }
 div ul{
   margin-top: 20px;
@@ -71,8 +79,8 @@ footer{
   text-align: center;
   font-family: 'Roboto Mono', monospace;
   border-top: solid 1px black;
-  height: 40px;
-  position:absolute;
-	width:100%;
-	bottom:0;
+  *height: 40px;
+  *position:absolute;
+	*width:100%;
+	*bottom:0;
 }
