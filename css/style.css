@@ -1,0 +1,78 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  background: rgb(236, 202, 230);
+
+  background: url(../images/background.avif);
+}
+header{
+  height: 310px;
+}
+.perfil{
+  width: 200px;
+  border-radius: 50%;
+  border-bottom: solid 5px black;
+  border-left: solid 5px black;
+  display: block;
+  margin: 20px auto;
+}
+.ig{
+  text-align: center;
+  margin-top: 2px;
+  font-size: 20px;
+  
+}
+nav ul li{
+  display: inline-block;
+}
+
+ul li a img{
+  width: 40px;
+  padding: 3px;
+  margin-top: 2px;
+  
+}
+nav ul{
+  padding: 0;
+  margin-top: -14px;
+  text-align: center;
+}
+section{
+  text-align: center;
+}
+section p{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 0px;
+}
+div ul{
+  margin-top: 20px;
+  padding: 0;
+}
+div ul li{
+  padding-bottom: 13px;
+  padding-top: 22px;
+}
+.btn{
+background: white;
+font-family: 'Roboto Mono', monospace;
+text-decoration: none;
+padding: 15px;
+border: solid 2px black;
+box-shadow: -4px 5px 0px black;
+color: black;
+transition: 0.5s;
+}
+.btn:hover{
+  border: solid 2px black;
+  box-shadow: 1px 5px 0px black;
+}
+footer{
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  border-top: solid 1px black;
+  height: 40px;
+  position:absolute;
+	width:100%;
+	bottom:0;
+}

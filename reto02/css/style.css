@@ -1,0 +1,146 @@
+body{
+  background: #202124;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  box-sizing:border-box;
+	margin:0;
+	padding:0;
+  width: 100%;
+}
+header{
+  height: 48px;
+  padding: 6px;
+
+}
+nav{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-end;
+  height: 48px;
+}
+a {
+  text-decoration: none;
+  margin: 6px 7px 7px 7px
+}
+a:visited{
+  color: white;
+  text-decoration: none;
+}
+.perfil{
+  width: 32px;
+  border-radius: 100%;
+  border: solid 4px transparent;
+  margin-left: -9px;
+}
+.perfil:hover {
+border-color: #2F3034;
+}
+.menu{
+  height: 21px;
+  border-radius: 100%;
+  border: solid 9px transparent;
+  margin-left: 6px;
+}
+.menu:hover {
+  background: #2F3034;
+  border-color: #2F3034;
+  }
+nav a:hover{
+	text-decoration:underline;
+}
+section{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin-top:18vh;
+}
+.logo{
+  height: 92px;
+}
+.search{
+  display: flex;
+  align-items: center;
+  margin: 23px;
+  border: 1px solid #606367;
+  border-radius: 24px;
+  max-width: 582px;
+  width: 100%;
+  height: 46px;
+}
+.search:hover{
+  background: #303134;
+  border: 1px solid #303134;
+}
+.search input{
+  border: transparent;
+  fill: transparent;
+  display: flex;
+  flex: 100%;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+}
+.search svg {
+	width:25.1px;
+	height:24px;
+	fill:#9aa0a6;
+	margin:12px 9px 9px 9px;
+}
+.iconitos{
+  display: flex;
+}
+.btn{
+  background: #303134;
+  border: 1px solid #303134;
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 6px 4px;
+  padding: 0 16px;
+  height: 36px;
+  cursor: pointer;
+}
+.btn:hover{
+  border: 1px solid #606367;
+}
+footer{
+  position:absolute;
+	width:100%;
+	bottom:0;
+  background:#171717;
+}
+span{
+  color: #999DA2;
+}
+footer nav div a{
+  color: #999da2;
+  padding: 15px;
+  margin: 0;
+}
+footer >   div, footer nav {
+	padding:15px 30px;
+	border-bottom: 1px solid #3d4243;
+	font-size:15px;
+	font-family:arial,sans-serif;
+}
+footer nav{
+	font-size:14px;
+	display:flex;
+  flex-wrap: wrap;
+	justify-content:space-between;
+	padding:0 20px;
+	border:none;
+}
+footer nav div {
+	display:flex;
+  flex-wrap: wrap;
+	align-items:center;
+}
+footer nav div a:visited{
+  color: #999da2;
+  text-decoration: none;
+}
