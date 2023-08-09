@@ -1,6 +1,7 @@
 const tasks = document.querySelectorAll('.list-group-item');
-const mensaje= document.getElementById('mensaje')
+const message = document.getElementById('message')
 const form = document.getElementById('form')
+const name = document.getElementById('name')
 let nombre = ''
 
 form.addEventListener('submit', (e) => {
@@ -12,7 +13,7 @@ tasks.forEach(task => {
   task.addEventListener ('click', () => {
     task.classList.toggle('done')
     const input = task.querySelector('input')
-    input.checket=!input.checked
+    input.checked = !input.checked;
 
     const label = task.querySelector('label')
     const taskTitle = label.innerText
@@ -23,5 +24,4 @@ tasks.forEach(task => {
 
 function alertUser (nombre, taskTitle) {
   alert(`${nombre} terminaste: ${taskTitle}`)
-
 }
