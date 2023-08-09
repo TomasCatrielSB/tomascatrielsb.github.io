@@ -54,6 +54,23 @@ body{
   width: 450px;
   margin-top: 20px;
 }
+ul{
+  list-style-type: none;
+}
+ input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: #d99db4
+}
+.list-group-item:hover{
+  background-color: #f6c5da;
+}
+.msj{
+  border: 1px solid purple;
+  padding: 32px;
+  margin-top: 32px;
+  border-radius: 16px;
+  display: none;
+}
 .footer{
   bottom: 0;
   min-width: 99%;
