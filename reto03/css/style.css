@@ -1,0 +1,80 @@
+body{
+  background-color: #f5e7f1;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  background-color: #f5d7e4;
+  font-family: 'Borel', cursive;
+  color: #d0608b;
+  display: flex;
+  align-items: center;
+  flex-direction: column;  
+  justify-content: space-around;
+  align-content: center;
+  box-shadow: 7px 9px 14px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.logo{
+  width: 450px;
+  padding-top: 10px;
+}
+.nombre{
+  text-align: center;
+  padding: 7px 0px 7px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #e59ab7;
+  height: 50px;
+  border-radius: 4px;
+
+}
+::placeholder{
+  font-family: 'Borel', cursive;
+  color: #c996ac;
+  text-align: center;
+}
+.nombre input{
+  width: 220PX;
+  height: 25px;
+  display: inline-block;
+  border-radius: 4px;
+  color: #CC4478;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+.nombre input:focus{
+  outline: none;
+}
+.contenedorLista{
+  border: 2px solid #e59ab7;
+  border-radius: 4px;
+  width: 450px;
+  margin-top: 20px;
+}
+.footer{
+  bottom: 0;
+  min-width: 99%;
+  text-align: center;
+  border: 2px solid #e59ab7;
+  width: 450px;
+  border-radius: 4px;
+}
+
+@media screen and (min-width:786px) {
+  .container{
+    width: 600px;
+    margin: 0 auto;
+  }
+  .logo{
+  width: 570px
+  }
+  .contenedorLista{
+    width: 570px;
+  }
+  .footer{
+    width: 570px;
+  }
+}

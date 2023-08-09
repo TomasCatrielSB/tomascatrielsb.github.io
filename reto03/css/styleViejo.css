@@ -1,0 +1,126 @@
+body{
+  background-color: #f5d7e4;
+  font-family: 'Borel', cursive;
+  color: #CC4478;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;  
+  justify-content: space-around;
+  align-content: center;
+}
+#logo{
+  width: 430px;
+}
+div{
+  width: 430px;
+  text-align: left;
+}
+.custom-checkbox {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.custom-checkbox input {
+  display: none;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px; /* Ajusta el tamaño del checkbox */
+  width: 20px; /* Ajusta el tamaño del checkbox */
+  background-color: #ccc; /* Color de fondo del checkbox cuando no está marcado */
+  border-radius: 50%; /* Hace que el checkbox sea redondo */
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+  background-color: #FF5733; /* Color de fondo del checkbox cuando está marcado */
+}
+
+
+.nombre input{
+  width: 220PX;
+  height: 25px;
+  display: inline-block;
+  border-radius: 6px;
+  color: #CC4478;
+  border: none;
+  text-align: center;
+}
+.nombre input:focus{
+  outline: none;
+}
+.nombre{
+  border: 2px solid #CC4478;
+  text-align: center;
+  padding: 7px 0px 7px 0px;
+  display: flex;
+  justify-content: center;
+}
+::placeholder{
+  font-family: 'Borel', cursive;
+  color: #c996ac;
+  text-align: center;
+}
+.contenedor {
+  width: 430px;
+  height: 345px;
+  border: 2px solid #CC4478;
+  display: block;
+  margin-top: 15px;
+
+}
+.task-list{
+padding-left: 20px;
+}
+.task-list li {
+  list-style: none;
+  margin-bottom: 0px;
+}
+input{
+  border-color: none;
+}
+.task-list input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.task-list input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Estilos para el popup */
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  padding: 20px;
+  display: none;
+}
+
+#popup-message {
+  margin: 0;
+}
+
+/* Estilos para ocultar y mostrar el popup */
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+footer {
+  bottom: 0;
+  min-width: 99%;
+  text-align: center;
+  display: block;
+  background-color: #f5d7e4;
+}

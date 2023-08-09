@@ -22,7 +22,8 @@ nav{
 }
 a{
   text-decoration: none;
-  margin: 6px 7px 7px 7px
+  margin: 6px 7px 7px 7px;
+  color: white;
 }
 a:visited{
   color: white;
